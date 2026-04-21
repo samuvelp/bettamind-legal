@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>BettaMind — Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="BettaMind privacy policy — what we collect, how we use it, and how to delete it." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F8F4EC;
+    --ink: #4A3A2A;
+    --muted: #8E7C6A;
+    --accent: #A57632;
+    --hairline: #E6DDCF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Geist', -apple-system, system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 24px 100px;
+  }
+  .back {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .kicker {
+    font-size: 11px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 36px;
+    letter-spacing: -0.4px;
+    margin: 6px 0 8px;
+  }
+  .updated {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 28px 0 6px;
+  }
+  p {
+    margin: 14px 0;
+    color: var(--ink);
+    font-size: 15px;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">← Back</a>
+  <p class="kicker">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated April 21, 2026</p>
+
+  <p>BettaMind is a small app that helps hobbyists care for their betta fish. This policy explains what we collect, why, and how to get it removed.</p>
+
+  <h2>What we collect</h2>
+  <p><strong>Account data.</strong> When you sign in with Google, we receive your email address, display name, and profile image from Google. We store these in Supabase to identify your account.</p>
+  <p><strong>Fish data.</strong> Everything you log inside the app — fish profiles, feeding events, water changes, mood check-ins, photos, notes, and chat messages with Finn — is stored in Supabase and linked to your account.</p>
+  <p><strong>No analytics.</strong> We do not run third-party analytics SDKs.</p>
+  <p><strong>Ads (Google AdMob).</strong> BettaMind shows a rewarded ad only when you choose to watch one — typically to unlock extra questions with Finn after you've used your daily allowance. We do not show banner or interstitial ads. Ads are served by Google AdMob, which may collect a device advertising ID to personalize or measure ads. You can reset or limit this ID in your device settings. For details, see Google's privacy policy at <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+
+  <h2>How we use it</h2>
+  <p>We use your data only to run the app: to show your fish, sync between devices, and power Finn's context-aware replies.</p>
+
+  <h2>Finn (AI responses)</h2>
+  <p>When you chat with Finn, we send a system prompt containing your selected fish's profile and recent log events, plus your message and the last few chat turns, to OpenAI to generate a reply. OpenAI does not use API content to train their models. We store the generated reply in your account's chat history.</p>
+  <p>We do not send Finn your email address or payment information.</p>
+
+  <h2>Storage</h2>
+  <p>All data is stored in Supabase (Postgres + Storage) in a managed region. Photos you upload are stored in a public bucket — the URLs are unguessable, and only the app surfaces them. Do not upload anything you do not want to share with someone who has the direct URL.</p>
+
+  <h2>Your rights</h2>
+  <p>You can delete your account at any time from Settings → Delete account. Deleting your account permanently removes your fish, events, chat history, photos, and auth record from our database. This cannot be undone.</p>
+  <p>You can also email us at <a href="mailto:samuvelpandian@gmail.com">samuvelpandian@gmail.com</a> for data requests.</p>
+
+  <h2>Children</h2>
+  <p>BettaMind is not directed at children under 13. If you are under 13, please do not use the app.</p>
+
+  <h2>Changes</h2>
+  <p>If we change this policy, the date at the top will update. Significant changes will be announced in-app.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:samuvelpandian@gmail.com">samuvelpandian@gmail.com</a></p>
+</main>
+</body>
+</html>
