@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>BettaMind — Delete your account</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="How to request deletion of your BettaMind account and associated data." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F8F4EC;
+    --ink: #4A3A2A;
+    --muted: #8E7C6A;
+    --accent: #A57632;
+    --hairline: #E6DDCF;
+    --panel: #FBF6EC;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Geist', -apple-system, system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 24px 100px;
+  }
+  .back {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .kicker {
+    font-size: 11px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 36px;
+    letter-spacing: -0.4px;
+    margin: 6px 0 8px;
+  }
+  .updated {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 28px 0 6px;
+  }
+  p { margin: 14px 0; color: var(--ink); font-size: 15px; }
+  a { color: var(--accent); }
+  ol, ul { padding-left: 20px; }
+  li { margin: 8px 0; font-size: 15px; }
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--hairline);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 18px 0;
+  }
+  .panel h3 {
+    margin: 0 0 6px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .panel p { margin: 6px 0; font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">← Back</a>
+  <p class="kicker">BettaMind · Sam FH Kingdom</p>
+  <h1>Delete your account</h1>
+  <p class="updated">Last updated April 22, 2026</p>
+
+  <p>BettaMind is made by Sam FH Kingdom. This page explains how to permanently delete your BettaMind account and everything associated with it.</p>
+
+  <h2>From inside the app</h2>
+  <p>The fastest way to delete your account:</p>
+  <ol>
+    <li>Open BettaMind on your device.</li>
+    <li>Tap <strong>Settings</strong> (bottom tab).</li>
+    <li>Scroll to the bottom and tap <strong>Delete account</strong>.</li>
+    <li>Confirm in the dialog. Your account and all related data will be removed immediately.</li>
+  </ol>
+
+  <h2>By email</h2>
+  <p>If you can't access the app, email <a href="mailto:samuvelpandian@gmail.com?subject=BettaMind%20account%20deletion">samuvelpandian@gmail.com</a> from the address you used to sign up and write "Please delete my BettaMind account." We will verify your identity and delete your data within 7 days.</p>
+
+  <h2>What gets deleted</h2>
+  <p>Once deletion completes, the following are permanently removed from our database:</p>
+  <ul>
+    <li>Your authentication record (email, Google sign-in link, session tokens).</li>
+    <li>Your profile row (display name, preferences).</li>
+    <li>All fish profiles you created (name, species, tank details, photos).</li>
+    <li>All care log entries (feedings, water changes, water parameters, mood check-ins, notes).</li>
+    <li>All reminders you had scheduled.</li>
+    <li>Your entire chat history with Finn.</li>
+    <li>Any photos you uploaded to our Supabase Storage bucket.</li>
+  </ul>
+
+  <h2>What is kept, and for how long</h2>
+  <div class="panel">
+    <h3>Short-lived operational records</h3>
+    <p>Our backend provider (Supabase) keeps generic request and error logs for up to 30 days for reliability and abuse prevention. These logs do not contain your chat content or fish data; they contain request timestamps, IP addresses, and error traces. They are automatically purged after 30 days.</p>
+  </div>
+  <div class="panel">
+    <h3>Ad network identifiers</h3>
+    <p>If you watched a rewarded ad, Google AdMob may have received your device's advertising ID. BettaMind does not store this ID. You can reset or limit it in your device's system settings. Google's retention is governed by their own policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+  </div>
+  <div class="panel">
+    <h3>AI inference logs at OpenAI</h3>
+    <p>Chat messages that Finn answered are sent to OpenAI's API at the moment you send them. OpenAI does not train on API data, but they may retain inference logs for up to 30 days for abuse monitoring before purging. BettaMind has no control over this retention window; it is OpenAI's policy for API customers.</p>
+  </div>
+
+  <h2>Deletion cannot be undone</h2>
+  <p>Account deletion is immediate and permanent. There is no recovery window. If you think you might come back, consider signing out instead.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about deletion or data access: <a href="mailto:samuvelpandian@gmail.com">samuvelpandian@gmail.com</a></p>
+  <p>See also: <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+</main>
+</body>
+</html>
